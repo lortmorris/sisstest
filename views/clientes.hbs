@@ -1,8 +1,13 @@
 <h1>Cliente data</h1>
 
-<pre>
-{{cliente.name}}
-{{cliente.age}}
-{{cliente.clienteID}}
-{{cliente._id}}
-</pre>
+
+{{#each clientes}}
+<ul>
+	<li><a href="/cliente/{{this.clienteID}}">{{this.clienteID}}</a></li>
+	<li>{{this.name}}</li>
+	<li>{{this.age}}</li>
+	<li>{{this.cuit}}</li>
+	<li>{{this.city}}</li>
+</ul>	
+{{/each}}
+

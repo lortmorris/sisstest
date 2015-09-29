@@ -5,8 +5,8 @@ module.exports = function(mws){
 				
                get: ['home']
 			   ,"/cliente/:id":{
-				   get:["getCliente"]
-				   ,post:["putCliente"]
+				   get:["client.getCliente"]
+				   ,post:["client.putCliente"]
 			   }
         }
 };
